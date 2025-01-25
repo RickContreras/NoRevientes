@@ -42,7 +42,7 @@ public class Moven : MonoBehaviour
         }
     }
 
-    void OntriggerEnter2D(Collision2D collision)
+    void OntriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Ramp"))
         {
@@ -51,7 +51,7 @@ public class Moven : MonoBehaviour
         }
     }
 
-    void OnTriggerExit2D(Collision2D collision)
+    void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Ramp"))
         {
