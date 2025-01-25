@@ -196,7 +196,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8568297061514274574, guid: f6f4cbfbf522a9840b3e037677a58606, type: 3}
+  m_Sprite: {fileID: -8568297061514274574, guid: 5ff23c147d0447745970457efe3d0552, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -484,9 +484,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0705ed9b435b8d948ac073a75ecf92b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pushForce: 5
-  pushRadius: 2
-  dampingFactor: 0.95
 --- !u!50 &957378887
 Rigidbody2D:
   serializedVersion: 5
@@ -596,9 +593,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1466eaeed23cf454cae17a3a7128f2ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  normalSpeed: 5
-  rampSpeed: 50
-  exitImpulseForce: 20
 --- !u!114 &957378891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -611,34 +605,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db6addcd292679844a9499dad1a47e97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxScale: 1.5
-  minScale: 0.5
-  scaleAmount: 0.2
-  scaleCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: -2.4038227
-      outSlope: -2.4038227
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.32083333
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  timeScaling: 0.5
 --- !u!58 &957378892
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1229,6 +1195,7 @@ GameObject:
   - component: {fileID: 1850224249}
   - component: {fileID: 1850224254}
   - component: {fileID: 1850224253}
+  - component: {fileID: 1850224255}
   m_Layer: 0
   m_Name: Burbuja
   m_TagString: Untagged
@@ -1245,12 +1212,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1850224248}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0705ed9b435b8d948ac073a75ecf92b4, type: 3}
+  m_Script: {fileID: 11500000, guid: 7fb3b9f6de84966498ea70214d031664, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pushForce: 5
-  pushRadius: 2
-  dampingFactor: 0.995
+  normalSpeed: 5
+  rampSpeed: 100
+  exitImpulseForce: 10000
 --- !u!114 &1850224250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1260,7 +1227,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1850224248}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db6addcd292679844a9499dad1a47e97, type: 3}
+  m_Script: {fileID: 11500000, guid: 7f558b9071e44a543a03a64a71fadb71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxScale: 1.5
@@ -1282,12 +1249,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1850224248}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1466eaeed23cf454cae17a3a7128f2ba, type: 3}
+  m_Script: {fileID: 11500000, guid: f50e6a3c791a8264da359648860acec4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  normalSpeed: 5
-  rampSpeed: 10
-  exitImpulseForce: 10
+  pushForce: 5
+  pushRadius: 2
+  dampingFactor: 0.995
 --- !u!4 &1850224252
 Transform:
   m_ObjectHideFlags: 0
@@ -1367,6 +1334,28 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1850224255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850224248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f558b9071e44a543a03a64a71fadb71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxScale: 1.5
+  minScale: 0.5
+  scaleAmount: 0.2
+  scaleCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  timeScaling: 0.5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
