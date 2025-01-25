@@ -500,9 +500,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db6addcd292679844a9499dad1a47e97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scaleIncreaseAmount: 0.2
-  scaleDecreaseAmount: 0.2
   maxScale: 1.5
+  minScale: 0.5
+  scaleAmount: 0.2
+  scaleCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: -2.4038227
+      outSlope: -2.4038227
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.32083333
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  timeScaling: 0.5
 --- !u!58 &957378892
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -685,7 +710,7 @@ GameObject:
   - component: {fileID: 1101010640}
   - component: {fileID: 1101010639}
   m_Layer: 0
-  m_Name: Square
+  m_Name: BurbujaDecrecimiento
   m_TagString: Square
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -819,7 +844,7 @@ GameObject:
   - component: {fileID: 1476566297}
   - component: {fileID: 1476566296}
   m_Layer: 0
-  m_Name: Triangle
+  m_Name: BurbujaCrecimiento
   m_TagString: Triangle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
