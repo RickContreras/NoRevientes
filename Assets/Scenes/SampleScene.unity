@@ -352,6 +352,7 @@ GameObject:
   - component: {fileID: 957378888}
   - component: {fileID: 957378887}
   - component: {fileID: 957378886}
+  - component: {fileID: 957378890}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -471,6 +472,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &957378890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957378885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd50c8e3db4bee14b9876f284e126afc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pushForce: 5
+  pushRadius: 2
+  dampingFactor: 0.95
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
