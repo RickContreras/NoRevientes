@@ -196,7 +196,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8568297061514274574, guid: 5ff23c147d0447745970457efe3d0552, type: 3}
+  m_Sprite: {fileID: -8568297061514274574, guid: f31302ff4bf66d04f876904bd7c5b694, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1198,7 +1198,7 @@ GameObject:
   - component: {fileID: 1850224255}
   m_Layer: 0
   m_Name: Burbuja
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1212,7 +1212,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1850224248}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fb3b9f6de84966498ea70214d031664, type: 3}
+  m_Script: {fileID: 11500000, guid: 75c45c41d90f2a44684e0a21bb612c68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   normalSpeed: 5
@@ -1227,7 +1227,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1850224248}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f558b9071e44a543a03a64a71fadb71, type: 3}
+  m_Script: {fileID: 11500000, guid: b379300aa48d4c14fb2a063ded21b918, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxScale: 1.5
@@ -1249,7 +1249,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1850224248}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f50e6a3c791a8264da359648860acec4, type: 3}
+  m_Script: {fileID: 11500000, guid: e0e0a0a91a6b5e943b497ea001768b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pushForce: 5
@@ -1346,16 +1346,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f558b9071e44a543a03a64a71fadb71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxScale: 1.5
-  minScale: 0.5
-  scaleAmount: 0.2
-  scaleCurve:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  timeScaling: 0.5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
