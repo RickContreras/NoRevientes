@@ -7,27 +7,23 @@ public class Impulso : MonoBehaviour
     public float rampSpeed = 50f;
     private Rigidbody2D rb;
     private bool onRamp = false;
-
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
     }
-
     void Update()
     {
         //Obtener el vector velocidad del rigidbody
         Vector2 currentVelocity = rb.linearVelocity;
-        print(currentVelocity);
-
+        //print(currentVelocity);
         Vector2 movement = currentVelocity.normalized;
-
         if (onRamp)
         {
             rb.linearVelocity = movement * rampSpeed;
         }
         else
         {
-            print("Normal speed");
+            //print("Normal speed");
             rb.linearVelocity = movement * normalSpeed;
         }
     }
@@ -36,7 +32,7 @@ public class Impulso : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ramp"))
         {
-            print("On ramp");
+            //print("On ramp");
             onRamp = true;
             StopCoroutine("RampExitDelay");
         }
