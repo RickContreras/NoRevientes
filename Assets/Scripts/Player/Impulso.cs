@@ -9,12 +9,10 @@ public class Impulso : MonoBehaviour
     private Rigidbody2D rb;
     private bool onRamp = false;
     private Vector2 rampExitDirection;
-
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
     }
-
     void Update()
     {
         // Obtener el vector velocidad del rigidbody
@@ -53,12 +51,8 @@ public class Impulso : MonoBehaviour
 
     IEnumerator RampExitDelay()
     {   
-
-        print(rb.linearVelocity);
         ApplyExitImpulse();
-        print(rb.linearVelocity);
         yield return new WaitForSeconds(0.2f);// Duración más corta para un impulso más intenso
-        print(rb.linearVelocity);
         onRamp = false;
     }
 
