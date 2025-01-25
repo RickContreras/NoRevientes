@@ -9,9 +9,9 @@ public class Crecimiento : MonoBehaviour
     // Verifica si el objeto con el que colisionó tiene un PolygonCollider2D y la etiqueta "Triangle"
     if (collision.gameObject.CompareTag("Triangle"))
     {
-
-        // Agranda el círculo aumentando su escala (radio)
-        Vector3 newScale = transform.localScale + new Vector3(scaleIncreaseAmount, scaleIncreaseAmount, 0);
+        print("Incremento de escala");
+            // Agranda el círculo aumentando su escala (radio)
+            Vector3 newScale = transform.localScale + new Vector3(scaleIncreaseAmount, scaleIncreaseAmount, 0);
         if (newScale.x <= maxScale && newScale.y <= maxScale)
         {
             transform.localScale = newScale;
@@ -24,7 +24,8 @@ public class Crecimiento : MonoBehaviour
     }
     if (collision.gameObject.CompareTag("Square"))
     {
-        transform.localScale -= new Vector3(scaleDecreaseAmount, scaleDecreaseAmount, 0);
+            print("Disminución de escala");
+            transform.localScale -= new Vector3(scaleDecreaseAmount, scaleDecreaseAmount, 0);
         if (transform.localScale.x < 0.1f || transform.localScale.y < 0.1f)
         {
             transform.localScale = new Vector3(0.5f, 0.5f, 0);
